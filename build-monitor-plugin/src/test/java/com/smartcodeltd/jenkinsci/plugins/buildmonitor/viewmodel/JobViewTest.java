@@ -374,7 +374,7 @@ public class JobViewTest {
                         andThePrevious(build().wasBrokenBy("Daniel")).
                         andThePrevious(build().succeededThanksTo("Errol")))));
 
-        assertThat(view.headline(), is("2 builds have failed since Daniel committed their changes"));
+        assertThat(view.headline(), is("2 tests have failed since Daniel committed their changes"));
     }
 
     @Test
@@ -384,7 +384,7 @@ public class JobViewTest {
                         andThePrevious(build().wasBrokenBy("Daniel", "Ben", "Connor")).
                         andThePrevious(build().succeededThanksTo("Errol")))));
 
-        assertThat(view.headline(), is("1 build has failed since Ben, Connor and Daniel committed their changes"));
+        assertThat(view.headline(), is("1 test has failed since Ben, Connor and Daniel committed their changes"));
     }
 
     /*

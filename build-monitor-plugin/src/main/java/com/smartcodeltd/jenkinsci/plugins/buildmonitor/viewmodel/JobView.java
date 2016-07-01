@@ -120,8 +120,8 @@ public class JobView {
 
             default:
                 String buildsFailedSince = Pluraliser.pluralise(
-                        "%s build has failed",
-                        "%s builds have failed",
+                        "%s test has failed",
+                        "%s tests have failed",
                         failedBuildsAsc.size() - 1
                 );
 
